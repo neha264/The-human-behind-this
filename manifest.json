@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "The Human Behind This",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "siteData.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
